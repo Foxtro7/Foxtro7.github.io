@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Markdown"
+date:   2018-05-11  14:00:00 -0700
+categories: uncategorized
+author: Eric
+---
+
+Here's a list of headers
+1. # h1
+2. ## h2
+3. ### h3
+4. #### h4
+5. ##### h5
+6. ###### h6
+
+Emphasis Effects
+- *Italics*
+- **Bold**
+- **_Bold & Italics_**
+- ~~Strikethrough~~
+- ~~**_wOoOoW_**~~
+
+[here some good memes](https://www.reddit.com/r/me_irl/)
+
+---
+***
+___
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+>wowowwowowwo
