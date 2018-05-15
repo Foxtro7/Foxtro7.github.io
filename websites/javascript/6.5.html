@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js6.5</title>
+</head>
+
+<body>
+<script type="text/javascript">
+	var D = Number(prompt("How far will you be driving (in miles)?"));
+	var S = Number(prompt("What will your average speed be (in miles per hour)?"));
+	var H = Math.floor(D / S);
+	var R = D % S;
+	var M = Math.round(R / S * 60);
+	alert("You will drive for about " + H + " hours and " + M + " minutes");
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js7.8</title>
+</head>
+
+<body>
+<script type="text/javascript">
+var d = new Date();
+var time = d.getHours();
+document.write(time);
+//var time = Number(prompt("time"));
+var w = false
+if( time >= 6 && time < 10 ) { 
+	var q = 1
+	var w = confirm("Continental breakfast is being served in the lobby. Shall I make you a reservation?"); }
+else if( time >= 11 && time < 14 ) { 
+	var q = 2
+	var w = confirm("The hotel restaurant is open. Shall I make you a reservation?"); }
+else if( time >=17 && time < 21 ) { 
+	var q = 3
+	var w = confirm("The hotel restaurant is open and room service is available. Shall I order food for you?"); }
+else { 
+	alert("Snacks are available in the lobby."); }
+if( w == true ) { 
+	if ( q == 1 ) {
+		var e = Math.floor(Math.random() * 9)
+		if ( e == 0 ) {
+			alert("You have a reservation at 6 am."); }
+		else if ( e == 1 ) {
+			alert("You have a reservation at 6:30 am."); }
+		else if ( e == 2 ) {
+			alert("You have a reservation at 7 am."); }
+		else if ( e == 3 ) {
+			alert("You have a reservation at 7:30 am."); }
+		else if ( e == 4 ) {
+			alert("You have a reservation at 8 am."); }
+		else if ( e == 5 ) {
+			alert("You have a reservation at 8:30 am."); }
+		else if ( e == 6 ) {
+			alert("You have a reservation at 9 am."); }
+		else if ( e == 7 ) {
+			alert("You have a reservation at 9:30 am."); }
+		else {
+			alert("You have a reservation at 10 am."); } }
+	if ( q == 2 ) {
+		var e = Math.floor(Math.random() * 7)
+		if ( e == 0 ) {
+			alert("You have a reservation at 11 am."); }
+		else if ( e == 1 ) {
+			alert("You have a reservation at 11:30 am."); }
+		else if ( e == 2 ) {
+			alert("You have a reservation at 12 pm."); }
+		else if ( e == 3 ) {
+			alert("You have a reservation at 12:30 pm."); }
+		else if ( e == 4 ) {
+			alert("You have a reservation at 1 pm."); }
+		else if ( e == 5 ) {
+			alert("You have a reservation at 1:30 pm."); }
+		else {
+			alert("You have a reservation at 2 pm."); } }
+	if ( q == 3 ) {
+		var e = Math.floor(Math.random() * 9)
+		if ( e == 0 ) {
+			alert("Your food will be delivered at 5 pm."); }
+		else if ( e == 1 ) {
+			alert("Your food will be delivered at 5:30 pm."); }
+		else if ( e == 2 ) {
+			alert("Your food will be delivered at 6 pm."); }
+		else if ( e == 3 ) {
+			alert("Your food will be delivered at 6:30 pm."); }
+		else if ( e == 4 ) {
+			alert("Your food will be delivered at 7 pm."); }
+		else if ( e == 5 ) {
+			alert("Your food will be delivered at 7:30 pm."); }
+		else if ( e == 6 ) {
+			alert("Your food will be delivered at 8 pm."); }
+		else if ( e == 7 ) {
+			alert("Your food will be delivered at 8:30 pm."); }
+		else {
+			alert("Your food will be delivered at 9 pm."); } } }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js7.4</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	while(true) { // true is always true
+		var score = eval(prompt("What was you score on the test?"));
+		if( score < 0 || score > 100 ) {
+			alert("Error. Grade cannot be less than 0 or greater than 100");
+			continue; // Goes back to top of loop
+		}
+		if( score >= 90 && score <= 100 )
+			{ alert("Congratulations! You got an A!"); }
+		else if( score >= 80 && score < 90 )
+			{ alert("Good job! You got a B!"); }
+		else if( score >= 70 && score < 80 )
+			{ alert("You got a C. That's average."); }
+		else if( score >= 60 && score < 70 )
+			{ alert("You got a D? Thats pretty trash."); }
+		else
+			{ alert("You got an F. git gud"); }
+		var answer = prompt("Do you want to enter another grade? Y/N");
+		if( answer != "Y" ) {
+			break; // end loop
+		}
+	}
+</script>
+
+</body>
+</html>

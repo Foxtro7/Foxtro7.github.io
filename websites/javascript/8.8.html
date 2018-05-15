@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js8.8</title>
+<script type="text/javascript">
+	function tipCalc(bill, tip) {
+		return parseFloat(bill) * parseFloat(tip) / 100;
+	}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+	var x = prompt("What is your bill?");
+	var y = prompt("In percentage, how much would you like to tip?");
+	alert("Your tip is $" + tipCalc(x,y) + ".");
+</script>
+</body>
+</html>

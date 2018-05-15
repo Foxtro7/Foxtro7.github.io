@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+/* My Color Palatte
+Red: #D6110F
+Orange: #ED8E1D
+Yellow: #D6C80F
+Green: #0EB812
+Purple: #8F05FA
+*/
+
+/**************************************
+
+	BASIC STRUCTURE
+
+**************************************/
+
+#wrapper {
+		width: 960px;
+		padding: 5px;
+		margin: 20px auto;
+}
+
+#header {
+		height: 100px;
+}
+
+#sidebar {
+		float: right;
+		width: 300px;
+}
+
+#content {
+		float: left;
+		width: 600px;	
+}
+
+#footer {
+	text-align: right;
+	clear: both;
+}
+		
+/**************************************
+
+	COLORS AND FONTS
+
+**************************************/
+
+body {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color: #FFFFFF;
+	background-color: #3F3FFF;
+}
+
+a {
+	color: #0000FF;
+}
+span {
+	color: #0000AF;
+}
+
+#header, #sidebar, #content, #footer {
+	background-color: rgba(0, 0, 0, .75);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 16px;
+	border-color: #0000FF;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/**************************************
+
+	RESPONSIVE WIDTH
+
+**************************************/
+
+@media screen and (max-width: 980px) {
+	#wrapper {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#content, #sidebar {
+		width: auto;
+		float: none;
+	}
+	#header {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		float: none;
+	}
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+	body {
+		font-size: 40px;
+	}
+	#header {
+		height: auto;
+	}
+	#content {
+		width: auto;
+	}
+	#sidebar {
+		width: auto;
+		clear: both;
+	}
+	#header, #sidebar, #content, #footer {
+		border-radius: 16px;
+		border-width: 8px;
+	}
+}

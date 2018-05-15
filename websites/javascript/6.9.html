@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js6.9</title>
+</head>
+
+<body>
+<script type="text/javascript">
+var W = Number(prompt("What is your weight in pounds?"));
+var H = Number(prompt("What is your height in inches?"));
+var feet = Math.floor(H / 12);
+var inches = H % 12;
+document.write("Height: " + feet + "' " + inches + "\"<br>");
+document.write("Weight: " + W + " lbs<br>");
+var W = W * 0.45359237;
+var H = H * 0.0254;
+var BMI = W / (H * H);
+document.write("BMI: " + BMI);
+</script>
+</body>
+</html>

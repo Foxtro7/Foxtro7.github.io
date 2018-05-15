@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js8.7</title>
+<script type="text/javascript">
+	function isLeapYear(year) {
+		if(year % 4 != 0 || year % 100 == 0 && year % 400 != 0) { return false }
+		else { return true }
+	}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+	var x = prompt("Enter a year.");
+	alert(isLeapYear(x));
+</script>
+</body>
+</html>

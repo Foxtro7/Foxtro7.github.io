@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js8.3</title>
+<script type="text/javascript">
+// 0, 1, 1, 2, 3, 5, 8, 13...
+// 0, 1, 2, 3, 4, 5, 6, 7...
+
+	var count = 0;
+	function fib(x) {
+		count++;
+		switch(x) {
+			case 0:
+				return 0;
+				break;
+			case 1:
+				return 1;
+				break;
+			default:
+				return fib(x-1) + fib(x-2);
+				break;
+		}
+	}
+</script>		
+</head>
+
+<body>
+<script type="text/javascript">
+	for( n = 0; n < 20; n++ ) {
+		value = fib(n);
+		document.write(value + ", ");
+	}
+	alert("The function called itself " + count + " times!");
+</script>
+</body>
+</html>
