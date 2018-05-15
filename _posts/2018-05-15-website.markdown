@@ -6,4 +6,5 @@ categories: uncategorized
 author: Eric
 ---
 
-theres more stuff [here](/website/)
+theres more stuff [here][url]
+[url]: /website/
